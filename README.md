@@ -1,10 +1,16 @@
 # TaskTracker
 Project from Roadmap.sh
 
-Task tracker est un projet utilisé pour suivre et gérer vos tâches. Dans cette tâche, vous créerez une interface de ligne de commande (CLI) simple pour suivre ce que vous devez faire, ce que vous avez fait et ce sur quoi vous travaillez actuellement. Ce projet vous aidera à mettre en pratique vos compétences en programmation, notamment en travaillant avec le système de fichiers, en gérant les entrées utilisateur et en créant une application CLI simple.
+Task tracker est un projet utilisé pour suivre et gérer vos tâches. 
+
+Dans cette tâche, vous créerez une interface de ligne de commande (CLI) simple pour suivre ce que vous devez faire, ce que vous avez fait et ce sur quoi vous travaillez actuellement. 
+
+Ce projet vous aidera à mettre en pratique vos compétences en programmation, notamment en travaillant avec le système de fichiers, en gérant les entrées utilisateur et en créant une application CLI simple.
 
 ## Requirements
-L'application doit s'exécuter à partir de la ligne de commande, accepter les actions et les entrées de l'utilisateur comme arguments et stocker les tâches dans un fichier JSON. L'utilisateur doit pouvoir :
+L'application doit s'exécuter à partir de la ligne de commande, accepter les actions et les entrées de l'utilisateur comme arguments et stocker les tâches dans un fichier JSON. 
+
+L'utilisateur doit pouvoir :
 - Ajouter, mettre à jour et supprimer des tâches
 - Marquer une tâche comme étant en cours ou terminée
 - Lister toutes les tâches
@@ -77,4 +83,6 @@ Voici quelques étapes pour vous aider à démarrer avec le projet Task Tracker 
 - Nettoyez votre code et ajoutez des commentaires si nécessaire.
 - Écrivez un bon fichier readme expliquant comment utiliser votre CLI Task Tracker.
 
-À la fin de ce projet, vous aurez développé un outil pratique qui peut vous aider, vous ou d’autres, à gérer efficacement les tâches. Ce projet pose des bases solides pour des projets de programmation plus avancés et des applications concrètes.
+À la fin de ce projet, vous aurez développé un outil pratique qui peut vous aider, vous ou d’autres, à gérer efficacement les tâches. 
+
+Ce projet pose des bases solides pour des projets de programmation plus avancés et des applications concrètes.
