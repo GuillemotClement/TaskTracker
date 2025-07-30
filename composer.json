@@ -1,0 +1,15 @@
+{
+    "name": "clement/task-tracker",
+    "autoload": {
+        "psr-4": {
+            "Clement\\TaskTracker\\": "src/"
+        }
+    },
+    "authors": [
+        {
+            "name": "GuillemotClement",
+            "email": "guillemot.clement@protonmail.com"
+        }
+    ],
+    "require": {}
+}
