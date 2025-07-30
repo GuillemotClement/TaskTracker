@@ -7,9 +7,17 @@ use Clement\TaskTracker\CLITask;
 
 require __DIR__ . '/../vendor/autoload.php';
 
-$command = readline("Bonjour dans l'application TaskTracker, votre outil CLI de suivis de tâche.\n Quelle est votre demande ?\n" . PHP_EOL);
-
 $cli = new CLITask();
+
+$input = readline("Bonjour dans l'application TaskTracker, votre outil CLI de suivis de tâche.\n Quelle est votre demande ?\n" . PHP_EOL);
+
+
+
+$arrInput = explode(" ", $input);
+
+$command = $cli->extractCommande($input);
+$args = $cli->extractArgs($input);
+
 
 while(true){
     switch($command){
@@ -17,7 +25,8 @@ while(true){
             $cli->listCmd();
             break;
         case "add":
-            echo "Ajout d'une task";
+            $result = $cli->createTask($args);
+            echo $result;
             break;
         case "update":
             echo "Update d'une task";
@@ -32,7 +41,7 @@ while(true){
             echo "mark done task";
             break;
         case "list":
-            echo "list tasks";
+            echo $cli->listTasks();
             break;
         case "exit":
             echo "Bye bye" . PHP_EOL;
@@ -40,7 +49,9 @@ while(true){
         default:
             echo "Commande non disponible" . PHP_EOL;
     }
-    $command = readline("Saisir votre commande :");
+    $input = readline("Saisir votre commande :");
+    $command = $cli->extractCommande($input);
+    $args = $cli->extractArgs($input);
 }
 
 
